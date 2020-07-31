@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Busca Cep</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="title">
+            <h1>Busca Cep</h1>
+        </div>
+        <form action="{{ url_for('index') }}">
+            <label>CEP: {{cep}}</label><br />
+            <label>Rua: {{rua}}</label><br />
+            <label>Bairro: {{bairro}}</label><br />
+            <label>Cidade: {{cidade}} </label><br />
+            <label>Estado: {{uf}}</label><br />
+            <label>IBGE: {{ibge}} </label><br />
+            <button type="submit" >Outra consulta</button>
+        </form>
+
+</body>
+
+</html>

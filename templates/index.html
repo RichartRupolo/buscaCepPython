@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Consulta CEP</title>
+        
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>Consulta CEP</h1>
+            </div>
+            <div id="content">
+                <form method="post" action="{{ url_for('busca_cep') }}">
+                  <label for="cep">CEP: </label>
+                  <input type="text" name="cep" class="textarea" value="" /><br />
+                  <input type="submit" />                 
+                </form>
+            </div>
+          
+    </body>
+</html>
